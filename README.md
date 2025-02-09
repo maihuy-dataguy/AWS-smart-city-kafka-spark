@@ -75,5 +75,5 @@ The project is designed with the following Technology Stack:
    ```
 9. Check written data in bucketname/data from S3
 
-![System Architecture](https://github.com/maihuy-dataguy/AWS-smart-city-kafka-spark/blob/main/pics/S3_data.png)
+    ![System Architecture](https://github.com/maihuy-dataguy/AWS-smart-city-kafka-spark/blob/main/pics/S3_data.png)
    
