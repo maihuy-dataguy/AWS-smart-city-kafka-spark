@@ -62,16 +62,16 @@ The project is designed with the following Technology Stack:
     ```
 7. Submit Spark streaming job to master node container
     ```bash
-      docker exec -it awssmartcityde-spark-master-1 spark-submit --master spark://spark-master:7077 \
-                 --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1,org.apache.hadoop:hadoop-aws:3.3.1,com.amazonaws:aws-java-sdk:1.11.469 \
-                 jobs/spark-stream-consumer.py
+    docker exec -it awssmartcityde-spark-master-1 spark-submit --master spark://spark-master:7077 \
+    --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1,org.apache.hadoop:hadoop-aws:3.3.1,com.amazonaws:aws-java-sdk:1.11.469 \
+    jobs/spark-stream-consumer.py
     ```
 8. Can use kafka CLI to check topic created and consumed for testing through broker container using docker desktop 
    ```bash
-       kafka-topics --bootstrap-servers broker:29092 --list
+   kafka-topics --bootstrap-servers broker:29092 --list
     ```
    ```bash
-       kafka-console-consumer --topic vehicle_data --bootstrap-servers broker:29092 --from-beginning
+   kafka-console-consumer --topic vehicle_data --bootstrap-servers broker:29092 --from-beginning
    ```
 9. Check written data in bucketname/data from S3
 
